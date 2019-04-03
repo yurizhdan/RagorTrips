@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+.header-wrap{
+    min-height: 60vh;
+    height: auto;
+    width: 100%;
+    background: url("img/9-min.jpg");
+    background-size: cover;
+    background-position: 100% 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0  0 10%;
+}
+
+.back-to-main{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 40px;
+    text-decoration: none;
+    color: rgba(250, 250, 250, .5);
+}
+
+.back-to-main:hover{
+    color: rgba(250, 250, 250, 1);
+}
+
+.header-wrap h3{
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    color: #ffffff;
+    font-size: 60px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.header-wrap nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.header-wrap nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.header-wrap nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    margin: 0 20px;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 2px solid transparent;
+}
+.header-wrap nav ul li a:hover{
+    color: beige;
+    border-bottom: 2px solid white;
+    transition: 1.5s;
+}
+
+
+.our-tours-section-content{
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.our-tours-section-content div{
+    height: auto;
+    width: 30%;
+    min-height: 60vh;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.our-tours-section-content div img{
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.our-tours-section-content div h4{
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.our-tours-section-content div p{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.more-about-trips{
+    background-color: transparent;
+    padding: 15px 15px;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    font-size: 18px;
+    margin: 20px 0;
+    align-self: flex-end;
+}
+
+.more-about-trips:hover{
+    background-color: rgba(0, 0, 0, 1);
+    color: #ffffff;
+}
+
+.more-trips{
+    height: auto;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 5%;
+}
+
+.more-trips-btn{
+    background-color: transparent;
+    padding: 15px 80px;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+.more-trips-btn:hover{
+    background-color: rgba(0, 0, 0, 1);
+    color: #ffffff;
+}
+
+footer{
+    height: 40vh;
+    width: 100%;
+    background: url("img/d-min.jpg");
+    background-size: cover;
+}
+
+.footer-wrap{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    padding-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-wrap img{
+    width: 60%;
+}
+
+.soc-netw-links a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 50px;
+    margin-right: 40px;
+}
+
+.soc-netw-links a:hover{
+    color: bisque;
+}
+
+.footer-wrap div ul{
+    list-style: none;
+    margin-top: 80px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-wrap div ul li{
+    margin-top: 15px;
+}
+
+.footer-wrap div ul span{
+    font-family: "Arial";
+    margin-right: 20px;
+}
+
+.footer-wrap div ul li:hover{
+    color: bisque;
+}
+
+.contact-with-us{
+    background-color: transparent;
+    padding: 15px 15px;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    font-size: 18px;
+    margin: 50px 100px;
+}
+
+.contact-with-us:hover{
+    background-color: rgba(0, 0, 0, 1);
+    color: #ffffff;
+}
+
+.contact-with-us.white-btn{
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    margin: 50px 0;
+}
+
+.contact-with-us.white-btn:hover{
+    background-color: rgba(250, 250, 250, .5);
+    color: #000000;
+}
+
+.move-up{
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 90%;
+    right: 1%;
+}
+
+.move-up i{
+    font-size: 40px;
+}
+
+.contact-with-us-form{
+    width: 30%;
+    height: auto;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 300;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 30px 40px;
+    border-radius: 4px;
+    display: none;
+}
+
+.name-form-close{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-size: 20px;
+}
+
+.name-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.name-form div{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-form label {
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.name-form input{
+    height: 40px;
+    width: 95%;
+    font-family: 'Merriweather', serif;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding-left: 10px;
+    background: rgba(250, 250, 250, .8) ;
+}
+
+.email-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.email-form label{
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    margin-bottom: 7px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.email-form input{
+    height: 40px;
+    font-family: 'Merriweather', serif;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding-left: 10px;
+    background: rgba(250, 250, 250, .8) ;
+}
+
+.phone-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-form label{
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    margin-bottom: 7px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.phone-form input{
+    height: 40px;
+    font-family: 'Merriweather', serif;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding-left: 10px;
+    background: rgba(250, 250, 250, .8) ;
+}
+
+.send-cont,
+.book-mes-send{
+    background-color: transparent;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    border: 2px solid white;
+    border-radius: 2px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.send-cont:hover,
+.book-mes-send:hover{
+    background-color: rgba(250, 250, 250, .4);
+}
+
+.flex{
+    display: flex;
+}

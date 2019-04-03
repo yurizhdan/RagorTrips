@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+.header-wrap{
+    min-height: 95vh;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: url("img/1.jpg");
+    background-size: cover;
+    background-position: 100% 50%;
+}
+
+.header-wrap-content{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 60%;
+    text-align: center;
+    user-select: none;
+}
+
+.header-wrap-content h1{
+    font-size: 100px;
+    color: #ffffff;
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: 40px;
+    letter-spacing: 15px;
+}
+
+.header-wrap-content p{
+    font-size: 23px;
+    color: #ffffff;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing: 7px;
+}
+
+.header-wrap i{
+    color: rgba(255, 255, 255, .6);
+    font-size: 50px;
+    transform: scaleX(1.6);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 10%;
+    z-index: 2;
+    animation: move-down-i 2s linear infinite;
+}
+
+@keyframes move-down-i {
+    from {
+        bottom: 10%;
+    }
+    50% {
+        bottom: 8%;
+    }
+    to{
+        bottom: 10%;
+    }
+}
+
+.about-trip{
+
+    min-height: 80vh;
+    height: auto;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.about-trip div{
+    width: 30%;
+    height: auto;
+    margin-left: 14%;
+}
+
+.about-trip div h3{
+    font-size: 60px;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.about-trip div p{
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    line-height: 33px;
+    color: #727272;
+}
+
+.trip-details{
+    width: 72%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.trip-details div{
+    width: 28%;
+    height: auto;
+    margin-bottom: 70px;
+    text-align: left;
+}
+
+.trip-details div h4{
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.trip-details div p{
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    line-height: 33px;
+    color: #727272;
+    margin-bottom: 10px;
+}
+
+.trip-details div h4 span{
+    font-size: 35px;
+}
+
+.trip-details div ul{
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    line-height: 28px;
+    color: #727272;
+}
+
+.img-block{
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.box-container{
+    border:.5px solid white;
+    background-position: center;
+    height: 350px;
+    width: 25%;
+    position: relative;
+}
+
+.box-container .img-box{
+    position: relative;
+    overflow: hidden;
+}
+
+.box-container .img-box img{
+    width: content-box;
+    transition: transform 1s;
+    height: 350px;
+}
+
+.box-container:hover .img-box img{
+    transform: scale(1.2);
+}
+
+.box-container .project-name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(181, 38, 38, .7);;
+    transition: 2s;
+    opacity: 0;
+
+}
+.box-container .project-name .project-name-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    font-family: Raleway;
+    font-weight: 700;
+}
+
+.box-container:hover .project-name{
+    opacity: 1;
+}
+
+.trip-program{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.trip-program div{
+    width: 40%;
+    margin-left: 20%;
+    margin-bottom: 150px;
+}
+
+.trip-program div h4{
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.trip-program div h4 span{
+    font-size: 37px;
+}
+
+.trip-program div p{
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    line-height: 33px;
+    color: #727272;
+    margin-bottom: 10px;
+}
+
+.background-img{
+    width: 100%;
+    height: 40vh;
+    background: url("img/444-min.jpg");
+    background-size: cover;
+    background-position: 100% 40%;
+}
+
+.advices{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advices div{
+    width: 28%;
+    height: auto;
+    margin-bottom: 70px;
+    text-align: left;
+}
+
+.advices h3 {
+    font-size: 40px;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.advices div h4{
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.advices div ul{
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    line-height: 28px;
+    color: #727272;
+}
+
+.book-trip{
+    width: 100%;
+    height: 80vh;
+
+    background: url("img/444-min.jpg");
+    background-size: cover;
+    background-position: 100% 40%;
+
+}
+
+.name-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(250, 250, 250, .2);
+}
+
+.book-form label{
+    color: black;
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.name-form div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.name-form input{
+    height: 50px;
+    width: 95%;
+    font-family: 'Merriweather', serif;
+    border: 2px solid black;
+    font-size: 20px;
+    border-radius: 5px;
+    padding-left: 10px;
+    background: rgba(250, 250, 250, .8);
+}
+
+.email-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.email-form input{
+    height: 50px;
+    font-family: 'Merriweather', serif;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 10px;
+    background: rgba(250, 250, 250, .8);
+}
+
+.phone-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-form input{
+    height: 50px;
+    font-family: 'Merriweather', serif;
+    border: 2px solid black;
+    font-size: 20px;
+    border-radius: 5px;
+    padding-left: 10px;
+    background: rgba(250, 250, 250, .8);
+}
+
+.book-mes-send{
+    background-color: black;
+    padding: 15px 15px;
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    border: 2px solid black;
+    border-radius: 2px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.book-mes-send:hover{
+    background: rgba(250, 250, 250, .8);
+    color: black;
+}
+
+.book-form{
+    width: 30%;
+    height: auto;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 4px;
+    display: flex;
+}
+
+.type-of-tour{
+    display: flex;
+    flex-direction: column;
+}
+
+.type-of-tour input{
+    height: 80px;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+    background: rgba(250, 250, 250, .8);
+}
+
+footer{
+    height: 40vh;
+    width: 100%;
+    background: url("img/d-min.jpg");
+    background-size: cover;
+}
+
+.footer-wrap{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    padding-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-wrap img{
+    width: 60%;
+}
+
+.soc-netw-links a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 50px;
+    margin-right: 40px;
+}
+
+.soc-netw-links a:hover{
+    color: bisque;
+}
+
+.footer-wrap div ul{
+    list-style: none;
+    margin-top: 80px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-wrap div ul li{
+    margin-top: 15px;
+}
+
+.footer-wrap div ul span{
+    font-family: "Arial";
+    margin-right: 20px;
+}
+
+.footer-wrap div ul li:hover{
+    color: bisque;
+}
+
+.contact-with-us{
+    background-color: transparent;
+    padding: 15px 15px;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    font-size: 18px;
+    margin: 50px 100px;
+}
+
+.contact-with-us a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact-with-us:hover{
+    background-color: rgba(0, 0, 0, 1);
+    color: #ffffff;
+}
+
+.contact-with-us.white-btn{
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    margin: 50px 0;
+}
+
+.contact-with-us.white-btn:hover{
+    background-color: rgba(250, 250, 250, .5);
+    color: #000000;
+}
+
+.back-to-main{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 40px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .5);
+}
+
+.back-to-main:hover{
+    color: rgba(0, 0, 0, 1);
+}
+
+.move-up{
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 90%;
+    right: 1%;
+}
+
+.move-up i{
+    font-size: 40px;
+}
+
+.flex{
+    display: flex;
+}
+
+
+
+
